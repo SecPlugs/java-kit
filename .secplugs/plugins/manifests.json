@@ -1,0 +1,12 @@
+[
+        {
+                "name" : "java_kit",
+                "type" : "generic",
+                "title" : "Java Samples Kit",
+                "description" : "Client library and samples for Java.",
+                "summary_html" : "@.secplugs/plugins/web_secure/summary.html",
+                "detail_html" : "@.secplugs/plugins/web_secure/detail.html",
+                "small_image" : "@.secplugs/plugins/web_secure/small_image.png",
+                "normal_image" : "@.secplugs/plugins/web_secure/normal_image.png"
+        }
+]
