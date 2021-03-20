@@ -1,0 +1,30 @@
+plugins {
+    id 'groovy'
+    id 'java-library'
+    id 'maven-publish'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:3.0.7'
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")
+    testImplementation 'org.spockframework:spock-core:2.0-M4-groovy-3.0'
+}
+
+
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.secplugs'
+            artifactId = 'java-kit'
+            version = '0.1'
+
+            from components.java
+        }
+    }
+}
+
