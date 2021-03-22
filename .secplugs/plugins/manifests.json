@@ -3,6 +3,7 @@
                 "name" : "java_kit",
                 "type" : "generic",
                 "title" : "Java Samples Kit",
+                "created_by" : "BenignB@secplugs.com",
                 "description" : "Client library and samples for Java.",
                 "summary_html" : "@.secplugs/plugins/java_kit/summary.html",
                 "detail_html" : "@.secplugs/plugins/java_kit/detail.html",
