@@ -1,13 +1,24 @@
 [
-        {
-                "name" : "java_kit",
-                "type" : "generic",
-                "title" : "Java Samples Kit",
-                "created_by" : "BenignB@secplugs.com",
-                "description" : "Client library and samples for Java.",
-                "summary_html" : "@.secplugs/plugins/java_kit/summary.html",
-                "detail_html" : "@.secplugs/plugins/java_kit/detail.html",
-                "small_image" : "@.secplugs/plugins/java_kit/small_image.png",
-                "normal_image" : "@.secplugs/plugins/java_kit/normal_image.png"
-        }
+  {
+    "name":"java_kit",
+    "type":"generic",
+    "title":"Java Samples Kit",
+    "created_by":"BenignB@secplugs.com",
+    "description":"Client library and samples for Java.",
+    "content":{
+      "summary":"@.secplugs/plugins/java_kit/summary.html",
+      "detail":"@.secplugs/plugins/java_kit/detail.html"
+    },
+    "images":{
+      "small":"@.secplugs/plugins/java_kit/small_image.png",
+      "normal":"@.secplugs/plugins/java_kit/normal_image.png",
+      "gallery":[
+        
+      ]
+    },
+    "links":{
+      "download":"https://github.com/SecPlugs/java-kit/wiki/Downloads",
+      "github":"https://github.com/SecPlugs/java-kit"
+    }
+  }
 ]
