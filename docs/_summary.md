@@ -1,4 +1,3 @@
-A Secplugs powered Chrome extension that scans web sites as you visit them. 
-See recent scan history, scan now or use the portal for deeper analysis. 
+A JVM client and samples to help kick start integrations with the Secplugs platform.  
 
-The tool is open source so you can modify as you wish.
+Use the library as is or modify to your needs.  

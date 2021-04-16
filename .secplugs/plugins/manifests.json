@@ -6,8 +6,9 @@
     "created_by":"BenignB@secplugs.com",
     "description":"Client library and samples for Java.",
     "content":{
-      "summary":"@.secplugs/plugins/java_kit/summary.html",
-      "detail":"@.secplugs/plugins/java_kit/detail.html"
+    "content":{
+      "summary":"https://secplugs.github.io/java-kit/docs/summary.html",
+      "detail":"https://secplugs.github.io/java-kit/docs/detail.html"
     },
     "images":{
       "small":"@.secplugs/plugins/java_kit/small_image.png",
@@ -17,7 +18,7 @@
       ]
     },
     "links":{
-      "download":"https://github.com/SecPlugs/java-kit/wiki/Downloads",
+      "more_info":"https://secplugs.github.io/java-kit/docs",
       "github":"https://github.com/SecPlugs/java-kit"
     }
   }
