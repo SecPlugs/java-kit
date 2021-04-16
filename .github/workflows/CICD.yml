@@ -1,0 +1,25 @@
+# This is the core continuous integration deployment workflow
+
+name: CICD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  pipeline:
+    name: Test and Build
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Pull code
+        uses: actions/checkout@v2
+
+      - name: Run Tests
+        run: |
+          ./build/runTests.sh
+
+
+ 

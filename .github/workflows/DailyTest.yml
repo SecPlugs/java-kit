@@ -1,0 +1,26 @@
+# This is regular daily test
+
+
+name: DailyTest
+
+
+on:
+  schedule:
+    - cron:  '5 4 * * *'
+    
+  workflow_dispatch:
+  
+        
+jobs:
+  pipeline:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Pull code
+        uses: actions/checkout@v2
+
+      - name: Run Tests
+        run: |
+          ./build/runTests.sh
+          
