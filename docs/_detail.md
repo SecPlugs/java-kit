@@ -4,6 +4,7 @@ Use this client side Java SDK to build security solutions for any Java Based env
 #### What are the features?
 
 - __File scanning__ - Scan files and directories for malware.
+- __Email scanning__ - Send emails and attachments for malware and spam analysis.
 - __Secplugs Portal__ - With a registered API key you can access all the core Secplugs features via the portal.
 
 #### How does it work?
