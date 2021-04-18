@@ -13,10 +13,13 @@ import okhttp3.Response
 @CompileStatic
 class RestClient {
     static final String baseUrl = "https://api.live.secplugs.com"
-    static final String apiKey = "Y5xkyVJjeh2odCl5D9nZM2xNPFCViVl04UnV17KS"
+    static final String apiKey = "r2iKI4q7Lu91Nu5uPl3eW3BPmRo4XK1ZbhLWtOKd"
 
-    static HashMap getPresignedUrl(String sha256, String userApiKey = "") {
+    static HashMap getPresignedUrl(String sha256, String userApiKey = "", String scanObjectType = "file") {
         def fileUploadUrl = baseUrl + "/security/file/upload?sha256=" + sha256
+        if (scanObjectType == "email") {
+            fileUploadUrl = baseUrl + "/security/email/upload?email_id=" + sha256
+        }
         String myApiKey = apiKey;
         if (userApiKey.length()) {
             myApiKey = userApiKey;
@@ -56,9 +59,13 @@ class RestClient {
         }
     }
 
-    static String quickScan(String sha256, String vendor = "hybrid_analysis", String userApiKey = "") {
+    static String quickScan(String sha256, String vendor = "hybrid_analysis", String userApiKey = "", String scanObjectType = "file") {
         String scanUrl = baseUrl + "/security/file/quickscan?"
         Map params = ["sha256": sha256, "vendorcfg": vendor ]
+        if (scanObjectType == "email") {
+            scanUrl = baseUrl + "/security/email/quickscan?"
+            params = ["email_id": sha256, "vendorcfg": vendor ]
+        }
         String query_string = params.each {it ->
             it.key + "=" + it.value
         }.collect().join("&")
