@@ -8,7 +8,7 @@ import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.RequestBody
 import okhttp3.Response
-
+import java.net.URLEncoder
 
 @CompileStatic
 class RestClient {
@@ -59,12 +59,13 @@ class RestClient {
         }
     }
 
-    static String quickScan(String sha256, String vendor = "hybrid_analysis", String userApiKey = "", String scanObjectType = "file") {
+    static String quickScan(String sha256, String vendor = "hybrid_analysis", String userApiKey = "", String scanObjectType = "file", String scanContext = "") {
         String scanUrl = baseUrl + "/security/file/quickscan?"
-        Map params = ["sha256": sha256, "vendorcfg": vendor ]
+        String encodedScanContext = URLEncoder.encode(scanContext, "UTF-8")
+        Map params = ["sha256": sha256, "vendorcfg": vendor, "scancontext": encodedScanContext ]
         if (scanObjectType == "email") {
             scanUrl = baseUrl + "/security/email/quickscan?"
-            params = ["email_id": sha256, "vendorcfg": vendor ]
+            params = ["email_id": sha256, "vendorcfg": vendor, "scancontext": encodedScanContext ]
         }
         String query_string = params.each {it ->
             it.key + "=" + it.value
