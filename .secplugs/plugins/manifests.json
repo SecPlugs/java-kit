@@ -2,9 +2,9 @@
   {
     "name":"java_kit",
     "type":"generic",
-    "title":"Java Samples Kit",
+    "title":"Java Kit",
     "created_by":"BenignB@secplugs.com",
-    "description":"Client library and samples for Java.",
+    "description":"Client library, tools and samples for Java.",
     "content":{
       "summary":"https://secplugs.github.io/java-kit/docs/summary.html",
       "detail":"https://secplugs.github.io/java-kit/docs/detail.html"

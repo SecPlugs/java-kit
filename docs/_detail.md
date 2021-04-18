@@ -9,7 +9,7 @@ Use this client side Java SDK to build security solutions for any Java Based env
 
 #### How does it work?
 
-The library supports all the standard Secplugs functionality allowing access to file web and email functionality and makes it easier than integrating direclty with the REST APIs.
+The library supports all the standard Secplugs functionality allowing access to file web and email functionality and makes it easier than integrating directly with the REST APIs.
 
 #### How do I get started?
 
