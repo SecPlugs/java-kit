@@ -59,13 +59,16 @@ class RestClient {
         }
     }
 
-    static String quickScan(String sha256, String vendor = "hybrid_analysis", String userApiKey = "", String scanObjectType = "file", String scanContext = "") {
+    static String quickScan(String sha256, String vendor = "", String userApiKey = "", String scanObjectType = "file", String scanContext = "") {
         String scanUrl = baseUrl + "/security/file/quickscan?"
         String encodedScanContext = URLEncoder.encode(scanContext, "UTF-8")
-        Map params = ["sha256": sha256, "vendorcfg": vendor]
+        Map params = ["sha256": sha256]
         if (scanObjectType == "email") {
             scanUrl = baseUrl + "/security/email/quickscan?"
-            params = ["email_id": sha256, "vendorcfg": vendor]
+            params = ["email_id": sha256]
+        }
+        if (vendor.length() > 0) {
+            params.put("vendorcfg", vendor)
         }
         if (encodedScanContext.length() > 0) {
             params.put("scancontext", encodedScanContext)
