@@ -6,7 +6,7 @@
 A JVM client and examples, samples and classes to kick start java based plugins
 
 ## Usage & More Info
-See the [Java Kit GitHub Pages](https://secplugs.github.io/java-kit/docs) for usage and other information
+See the [Java Kit GitHub Pages](https://docs.secplugs.com/java-kit/docs) for usage and other information
 
 ## Repository Layout
 This repository is laid out as follows..
