@@ -67,6 +67,11 @@ class RestClient {
             scanUrl = baseUrl + "/security/email/quickscan?"
             params = ["email_id": sha256]
         }
+        if (scanObjectType == "url") {
+            scanUrl = baseUrl + "/security/web/quickscan?"
+            String toScan = URLEncoder.encode(sha256, "UTF-8")
+            params = ["url": toScan]
+        }
         if (vendor.length() > 0) {
             params.put("vendorcfg", vendor)
         }
