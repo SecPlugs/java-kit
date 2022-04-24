@@ -27,7 +27,7 @@ To use additional features and the privacy of your own account, after registerin
 After creating a key, the only change to the code sample above would be
 
 ```java
-todo: mods to use ="my-api-key"
+todo: mods to use ="your-api-key"
 ```
 
 Everything else remains the same.
