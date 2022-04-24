@@ -3,17 +3,11 @@
 ![Daily Test](https://github.com/SecPlugs/java-kit/workflows/DailyTest/badge.svg)
 
 # java-kit
-A JVM client and examples, samples and classes to kick start java based plugins
+A JVM client and examples, samples and classes to kick start java based integrations
 
 ## Usage & More Info
-See the [Java Kit GitHub Pages](https://docs.secplugs.com/java-kit/docs) for usage and other information
+See the [Java Kit Docs](https://scancloud.io/index.php/docs?plugin=plugin-secplugs-java-kit) for usage and other information
 
-## Repository Layout
-This repository is laid out as follows..
 
-| Folder        | Description |
-| ------------- |:-------------| 
-| .secplugs     | contains the meta data to import into the Secplugs portal |
-| scripts       | core scripts that use the Secplugs platform      |
-| build         | build, package and publish scripts  |
+
 

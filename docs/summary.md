@@ -1,4 +1,6 @@
 ---
 layout: none
 ---
-{% include_relative _summary.md %}
+A JVM client and samples to help kick start integrations with the {brand-name} platform.  
+
+Use the library as is or modify to your needs.  
